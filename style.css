@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #025159 60%, #028175);
+}
+
+h1 {
+    font-size: max(4vw, 45px);
+    font-weight:bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    margin-left: 5%;
+    margin-right: 20%;
+    text-shadow: 3px 3px #D97823;
+}
+
+h2 {
+    font-family: monospace, comic;
+    font-weight: bold;
+    font-size: max(2vw, 30px);
+    color: #ffffff;
+    margin: 0 5%;
+    text-shadow: 2px 2px #D97823;
+}
+
+h3 {
+    font-size: max(2.5vw, 18px);
+    text-align:center;
+    color: white;
+    text-shadow: #D97823 0.15vw 0.15vh;
+}
+
+h4 {
+    font-size: max(2.5vw, 18px);
+    text-align:center;
+    color:#D97823;
+    font-family:sans-serif;
+    text-shadow: #025159 3px 3px;
+}
+
+a{
+    font-size: max(1vw, 14px);
+    color: black;
+    text-align: center;
+}
+
+
+
+span {
+    color:rgb(68, 169, 223);
+    font-family:sans-serif;
+}
+
+/* Header */
+header {
+    background: white;
+    position: sticky;  /*Fixar header no topo */
+    top: 0; /* Fixar header no topo */
+    opacity: 0.8;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 0 5%;
+} 
+
+header img {
+    width: 40px;
+    height: 40px;
+    margin:0 5%;
+}
+
+header a{
+    margin: 0 5%;
+    text-decoration: none;
+}
+
+header a:hover{
+    color:#D97823;
+    text-decoration:underline;
+}
+
+/* Section com imagem de fundo */
+.containerTop {
+    background: url(img/tartaruga_cima.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section p {
+    font-size: max(1vw, 15px);
+    color: white;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-right: 50%;
+}
+
+ /* Texto "Nossa Missão" */
+#missão {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: 5% 5%;
+    border-top: 3px dotted #D97823;
+    border-bottom: 3px dotted #D97823;
+    padding-block:3%;
+    flex-wrap:nowrap;
+}
+
+.mission_text {
+    font-family: sans-serif;
+    font-size: max(1vw, 14px);
+    color: rgb(255, 255, 255);
+    margin: 0 5%;
+}
+
+/* Duas imagens centrais */
+.imgCentral {
+    display: flex;
+    justify-content:space-between;
+    margin: 0 5%;
+}
+
+.img1 {
+    border: 2px solid white;
+    width: 49%;
+    max-width: 750px;
+    border-radius: 3% 15%;
+}
+
+.img2 {
+    border: 2px solid white;
+    width: 49%;
+    max-width: 750px;
+    border-radius: 15% 3%;
+}
+
+ /* foto circular com texto */
+.ContainerImgCircular {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin: 5% 10%;
+}
+
+.CircleImg {
+    border-radius: 50%;
+    border: 3px solid #D97823;
+    padding: 1px;
+    width: 35%;
+    min-width: 150px;
+    min-height: 150px;
+}
+
+.DivImgCircular {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+ol {
+    font-size: max(1vw, 14px);
+    font-family: sans-serif;
+    margin: 5% 0 0 8%;
+    color:white;
+}
+
+li::marker{
+    color:#D97823;
+    font-weight: bold;
+}
+
+/* Dados fim da página */
+.ContainerInf {
+    display: flex;
+    box-sizing: content-box;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 10%;
+    flex-wrap: nowrap;
+}
+
+.TextInf {
+    font-size: max(1vw, 14px);
+    color:white;
+    text-align: center;
+    margin-inline: 10%;
+    font-style: italic;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: max(1vw, 15px);
+    margin:1%;
+    border: 3px solid #D97823;
+    background-color: #028175;
+    height: auto;
+}
+
+footer p {
+    font-size: max(1vw, 11px);
+    font-style: oblique;
+    float: left;
+    width: 60%;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+}
+
+footer img {
+    width: max(8vw,120px);
+    height: max(8vw, 120px);
+    float: right;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.linkFooter:hover {
+    color:white;
+}
