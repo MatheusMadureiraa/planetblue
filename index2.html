@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Planet - Formulário</title>
+    <link rel="stylesheet" href="style2.css"/>
+</head>
+<body>
+    <header>
+        <a href="index.html" target="_blank" ><img src="img/LogoPNG.png" alt="Blue Planet"></a>
+    </header>
+    <section>
+        <h1>Você pode fazer a diferença</h1>
+        <p>Preenchendo este <span>formulário</span>, você nos ajudará a coletar dados para que possamos trabalhar da maneira mais eficiente.<br>Além disso, é importante que sejam realizadas <span>doações</span> para que nosso serviço continue.</p>
+    </section>
+    <form>
+        <label for="username">Nome:</label><br>
+        <input type="text" id="username" name="username" placeholder="Digite seu nome completo" required><br><br>
+        <label for="age">Idade:</label><br>
+        <input type="number" id="age" name="idade" min="1" max="120" placeholder="Digite sua idade" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required><br><br>
+        <label for="presenciar">Já presenciou alguém descartando lixo em ambientes marinhos?</label><br>
+        <input type="text" id="presenciar" name="presenciar" placeholder="Descreva como foi a situação"><br><br>
+        <p>Com que frequência você visita a praia ou áreas marinhas?</p><br>
+        <label for="sempre"><input type="radio" name="visitar" id="sempre">Sempre</label>
+        <label for="as vezes"><input type="radio" name="visitar" id="as vezes">Às vezes</label>
+        <label for="raramente"><input type="radio" name="visitar" id="raramente" checked>Raramente</label> <!--'Checked' deixa como opc padrao -->
+        <label for="nunca"><input type="radio" name="visitar" id="nunca">Nunca</label><br><br>
+        <p>Você já participou de programas de educação ambiental?<p><br>
+        <label for="sim"><input type="radio" name="participar" id="sim">Sim</label>
+        <label for="não"><input type="radio" name="participar" id="não" checked>Não</label><br><br>
+        <label for="sugestão">Quais sugestões você tem para promover a conscientização e a proteção da vida marinha?</label><br>
+        <input type="text" id="sugestão" name="sugestão"><br><br><br>
+        <footer class="buttonContainer">
+            <input type="submit" value="Enviar" class="button">
+            <input type="reset" value="Limpar" class="button">
+        </footer>
+    </form>
+
+</body>
+</html>
