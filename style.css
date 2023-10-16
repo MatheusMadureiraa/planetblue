@@ -85,7 +85,7 @@ header a:hover{
 
 /* Section com imagem de fundo */
 .containerTop {
-    background: url(img/tartaruga_cima.jpg) no-repeat center;
+    background: url(tartaruga_cima.jpg) no-repeat center;
     background-size: cover;
     height: 100vh;
     width: 100%;
