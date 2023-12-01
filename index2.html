@@ -8,13 +8,13 @@
 </head>
 <body>
     <header>
-        <a href="index.html" target="_blank" ><img src="LogoPNG.png" alt="Blue Planet"></a>
+        <a href="index.html" target="_blank" ><img src="img/LogoPNG.png" alt="Blue Planet"></a>
     </header>
     <section>
         <h1>Você pode fazer a diferença</h1>
-        <p>Preenchendo este <span>formulário</span>, você nos ajudará a coletar dados para que possamos trabalhar da maneira mais eficiente.<br>Além disso, é importante que sejam realizadas <span>doações</span> para que nosso serviço continue.</p>
+        <p>Preenchendo este <span>formulário</span>, você nos ajudará a trabalhar de maneira mais eficiente.<br></p>
     </section>
-    <form>
+    <form id="form">
         <label for="username">Nome:</label><br>
         <input type="text" id="username" name="username" placeholder="Digite seu nome completo" required><br><br>
         <label for="age">Idade:</label><br>
@@ -33,11 +33,14 @@
         <label for="não"><input type="radio" name="participar" id="não" checked>Não</label><br><br>
         <label for="sugestão">Quais sugestões você tem para promover a conscientização e a proteção da vida marinha?</label><br>
         <input type="text" id="sugestão" name="sugestão"><br><br><br>
-        <footer class="buttonContainer">
-            <input type="submit" value="Enviar" class="button">
-            <input type="reset" value="Limpar" class="button">
-        </footer>
+        <div class="buttonContainer">
+            <input type="button" value="Enviar" class="button" onclick="adicionarLista(), limparFormulario()" >
+            <input type="button" value="Limpar" class="button" onclick="limparFormulario()" >
+        </div>
+        <div id="pesquisarContainer">
+            <input type="text" id="pesquisa" name="pesquisa" placeholder="Pesquisar nome na lista" onkeyup="pesquisarLista()">
+        </div>
     </form>
-
+    <script src="script.js"></script>
 </body>
 </html>
