@@ -62,7 +62,7 @@ h1 {
 
 section p {
     color: white;
-    font-size: max(1vw, 18px);
+    font-size: max(1.2 vw, 18px);
     font-family:'Franklin Gothic';
     text-align:center;
     padding: 2vw;
@@ -74,8 +74,8 @@ form {
     flex-direction: column;
     align-content: space-around;
     justify-content: space-between;    
-    margin: 5%;
-    padding: 5% 5%;
+    margin: 5% 5%;
+    padding: 5% 5% 1% 5%;
     background-color: rgba(255, 255, 255, 0.131);
     border-radius: 15px;
 }
@@ -86,7 +86,9 @@ form input {
     align-items: baseline;
     outline: unset;
     padding: 5px;
+    margin-bottom: 2%;
 }
+
 label, p {
     display: block;
     font-size: max(13px, 1.2vw);
@@ -106,7 +108,7 @@ label, p {
 }
 
 .button {
-    font-size: max(14px, 1.3vw);    
+    font-size: max(13px, 1vw);    
     /* text-shadow: 2px 2px 1px black; */
     color: white;
     background-color: transparent;
@@ -114,4 +116,54 @@ label, p {
     height: 40px;
     margin-inline: 10px;
     background-color: rgba(255, 255, 255, 0.332);
+}
+
+footer {
+    display: flex;
+    flex-flow: column;
+    margin: 5%;
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.131);
+    border-radius: 15px;
+    align-items: center;
+}
+
+footer ul {
+    color: white;
+    font-size: max(1vw, 11px);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1vw;
+}
+
+.botaoExcluir {
+    background-color: rgba(245, 55, 55, 0.8);
+    color: aliceblue;
+    border: white solid 1px;
+    border-radius: 40%;
+    font-size: max(1vw, 12px);
+    width: max(1vw, 12px);
+}
+
+#botaoLimpar {
+    font-size: max(13px, 1vw);    
+    color: white;
+    background-color: transparent;
+    width: 80px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.332);
+    margin:1%;
+    border:#FFFF solid 1px;
+    border-radius: 5px;
+}
+
+#pesquisarContainer {
+    display:flex;
+    justify-content: center;
+    margin:30px;
+}
+
+#pesquisarContainer input {
+    text-align: center;
+    font-size: max(0.8vw, 13px);
+    padding: 5px;
 }
